@@ -1,4 +1,4 @@
-// swift-tools-version:5.8
+// swift-tools-version:5.9
 
 //
 // This source file is part of the SpeziLocation open source project
@@ -14,15 +14,20 @@ import PackageDescription
 let package = Package(
     name: "SpeziLocation",
     platforms: [
-        .iOS(.v16),
-        .watchOS(.v9)
+        .iOS(.v17)
     ],
     products: [
         .library(name: "SpeziLocation", targets: ["SpeziLocation"])
     ],
+    dependencies: [
+        .package(url: "https://github.com/StanfordSpezi/Spezi", .upToNextMinor(from: "0.8.0"))
+    ],
     targets: [
         .target(
-            name: "SpeziLocation"
+            name: "SpeziLocation",
+            dependencies: [
+                 .product(name: "Spezi", package: "Spezi")
+            ]
         ),
         .testTarget(
             name: "SpeziLocationTests",
