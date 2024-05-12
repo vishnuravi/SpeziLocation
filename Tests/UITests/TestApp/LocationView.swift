@@ -10,10 +10,12 @@ import CoreLocation
 import SpeziLocation
 import SwiftUI
 
+
 struct LocationView: View {
     @Environment(SpeziLocation.self) private var speziLocation
     @State private var location: CLLocation?
-
+    
+    
     var body: some View {
         VStack {
             if let location = location {
@@ -37,8 +39,9 @@ struct LocationView: View {
         }
         .buttonStyle(.borderedProminent)
     }
-
-    func requestWhenInUseAuthorization() async {
+    
+    
+    private func requestWhenInUseAuthorization() async {
         do {
             let authorized = try await self.speziLocation.requestWhenInUseAuthorization()
 
@@ -61,7 +64,7 @@ struct LocationView: View {
         }
     }
 
-    func getLatestLocation() async {
+    private func getLatestLocation() async {
         do {
             let locations = try await speziLocation.getLatestLocations()
             self.location = locations.last
@@ -70,6 +73,7 @@ struct LocationView: View {
         }
     }
 }
+
 
 #Preview {
     LocationView()
