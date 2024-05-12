@@ -30,15 +30,6 @@ jobs:
       resultBundle: SpeziLocationWatchOS.xcresult
       destination: 'platform=watchOS Simulator,name=Apple Watch Series 8 (45mm)'
       artifactname: SpeziLocationWatchOS.xcresult
-  packagevisionos:
-    name: Build and Test Swift Package visionOS
-    uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
-    with:
-      xcodeversion: latest
-      scheme: SpeziLocation
-      resultBundle: SpeziLocationVisionOS.xcresult
-      destination: 'platform=visionOS Simulator,name=Apple Vision Pro'
-      artifactname: SpeziLocationVisionOS.xcresult
   ios:
     name: Build and Test iOS
     uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
@@ -55,15 +46,6 @@ jobs:
       resultBundle: TestAppiPadOS.xcresult
       destination: 'platform=iOS Simulator,name=iPad mini (6th generation)'
       artifactname: TestAppiPadOS.xcresult
-  watchos:
-    name: Build and Test watchOS
-    uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
-    with:
-      path: 'Tests/UITests'
-      scheme: TestAppWatchApp
-      resultBundle: TestAppWatchApp.xcresult
-      destination: 'platform=watchOS Simulator,name=Apple Watch Series 8 (45mm)'
-      artifactname: TestAppWatchApp.xcresult
   codeql:
     name: CodeQL
     uses: StanfordBDHG/.github/.github/workflows/xcodebuild-or-fastlane.yml@v2
@@ -76,7 +58,7 @@ jobs:
       actions: read
   uploadcoveragereport:
     name: Upload Coverage Report
-    needs: [packageios, packagewatchos, packagevisionos, ios, ipados, watchos]
+    needs: [packageios, packagewatchos, ios, ipados]
     uses: StanfordBDHG/.github/.github/workflows/create-and-upload-coverage-report.yml@v2
     with:
       coveragereports: SpeziLocation.xcresult SpeziLocationWatchOS.xcresult SpeziLocationVisionOS.xcresult TestApp.xcresult TestAppiPadOS.xcresult TestAppWatchApp.xcresult

@@ -49,6 +49,7 @@
 		2FA7382B290ADFAA007ACEB9 /* TestApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestApp.swift; sourceTree = "<group>"; };
 		2FB0758A299DDB9000C0B37F /* TestApp.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestApp.xctestplan; sourceTree = "<group>"; };
 		63046DFC2B16136A00BFC8AB /* TestAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppDelegate.swift; sourceTree = "<group>"; };
+		636A094C2BF06DDC0078DF8B /* TestAppLocation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TestAppLocation.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				2F8A431229130A8C005D2B8F /* TestAppUITests.swift */,
+				636A094C2BF06DDC0078DF8B /* TestAppLocation.gpx */,
 			);
 			path = TestAppUITests;
 			sourceTree = "<group>";
