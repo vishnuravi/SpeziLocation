@@ -387,7 +387,6 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Used for testing location module.";
-				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Used for testing location module.";
 				INFOPLIST_KEY_NSLocationUsageDescription = "Used for testing location module.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Used for testing location module.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -431,7 +430,6 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Used for testing location module.";
-				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Used for testing location module.";
 				INFOPLIST_KEY_NSLocationUsageDescription = "Used for testing location module.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Used for testing location module.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -586,7 +584,6 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Used for testing location module.";
-				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Used for testing location module.";
 				INFOPLIST_KEY_NSLocationUsageDescription = "Used for testing location module.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Used for testing location module.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

@@ -40,6 +40,23 @@ class ExampleDelegate: SpeziAppDelegate {
 }
 ```
 
+### 3. Configure your Xcode project for Location Access
+
+Before requesting permissions for location access from your user, you will need to provide descriptions of how your app uses location services in your `Info.plist` file:
+
+- Open your project settings in Xcode by selecting *PROJECT_NAME > TARGET_NAME > Info* tab.
+- Under `Custom iOS Target Properties` (the `Info.plist` file), add one or more of the following keys depending on the level of location access you are requesting and add a description for your usage in the `Value` column which will be shown to the user when you request access:
+
+| Property | Description |
+|----------|-------------|
+| `Privacy - Location When In Use Usage Description` | Access to location while the app is in use (in the foreground). |
+| `Privacy - Location Always and When In Use Usage Description` | Access to location both when the app is in use and in the background. |
+
+
+## Usage
+
+
+
 ## License
 This project is licensed under the MIT License. See [Licenses](https://github.com/vishnuravi/SpeziLocation/tree/main/LICENSES) for more information.
 
