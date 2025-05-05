@@ -44,5 +44,5 @@ jobs:
       path: 'Tests/UITests'
       scheme: TestApp
       resultBundle: TestAppiPadOS.xcresult
-      destination: 'platform=iOS Simulator,name=iPad mini (6th generation)'
+      destination: 'platform=iOS Simulator,,OS=18.0,name=iPad mini (6th generation)'
       artifactname: TestAppiPadOS.xcresult
