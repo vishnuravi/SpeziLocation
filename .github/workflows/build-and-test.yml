@@ -48,6 +48,6 @@ jobs:
       runsonlabels: '["macOS", "self-hosted"]'
       path: 'Tests/UITests'
       scheme: TestApp
-      destination: 'platform=iOS Simulator,name=iPad Air 11-inch (M2)'
+      destination: 'platform=iOS Simulator,name=iPad Pro 13-inch (M4)'
       resultBundle: TestApp-iPadOS.xcresult
       artifactname: TestApp-iPadOS.xcresult
